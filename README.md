@@ -1,40 +1,28 @@
-[![Shipping files](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml)
-# ds-project-template
 
-Template for creating ds simple projects
+
+# Matching Buissness offers to Client Preferences through Exploratary Data Analysis
+## From real estate data to a House for Larry Sanders. 
+
+This projects applies an EDA to match client preferences with real estate offers and enables actionable insights to offer data-driven decision making. 
 
 ## Requirements
 
 - pyenv
 - python==3.11.3
 
-## Setup
+## Motivation 
+An exploratory data analysis is used to understand a data set and align the offers of a fictional real agency to the wishes of a fictional client, Larry Sanders.  
+This project demonstrates how with client-specific criteria, the analysis demonstrates how structured data exploration and visualization can uncover meaningful insights that support better, evidence-based decision-making. 
+The goal of the EDA is to find fitting recomendations for the client as well check multiple hypotheses regarding the data.
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+#### Larry Sanders
+The fictonal client Larry Sanders would like a waterfront. He has limited budget and would like something nice and isolated. 
+Eventhough Larry has kids of his own, he wants a central neighborhood without kids. He does not want his kids to play with other kids, because he is afraid of germs.
 
-* setting the python version locally to 3.11.3
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
-
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
+#### Hypotheses to be tested
+1. houses at the waterfront have more squarefeet (are larger)
+2. houses at the waterfront rarely have a basement
+3. houses that are isolated and at the waterfront are the most expensive 
 
 ## Set up your Environment
 This repo contains a requirements.txt file with a list of all the packages and dependencies you will need.
@@ -96,3 +84,17 @@ Before you can start with plotly in Jupyter Lab you have to install node.js (if 
     pip install -r requirements.txt
     ```
  
+## Project strucure
+The project ordner includes a documented jupyter notebook, a powerpoint presentation and a python script processind and cleaning the data as well as unit test data. 
+
+
+## Lizenz
+The dataset used in this project, “House Sales in King County, USA”, is publicly available on:
+https://www.kaggle.com/datasets/harlfoxem/housesalesprediction
+
+It contains real estate sales data for King County, Washington (including Seattle) from May 2014 to May 2015.
+The dataset is provided for educational and non-commercial use under the terms specified by the original author (user: harlfoxem) on Kaggle.
+This project uses the data solely for exploratory data analysis and demonstration of data science methods.
+
+## Author
+**luiseemelin** 
